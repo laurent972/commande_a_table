@@ -1,0 +1,52 @@
+.drop-shadow{
+   @include drop-shadow;
+}
+
+.box-rounded{
+   @include box-rounded;
+}
+
+.cloche-number{
+   background: $secondary;
+   width: 22px;
+   height: 22px;
+   font-size: 12px;
+   color: $white;
+   top: -8px;
+   right: -9px;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.filter-app{
+   background: $white;
+}
+
+.card{
+   .price-card{
+      color: $tertiary;
+   }
+
+   &.cart-item{
+      .price-card.qty{
+         color: $black;
+      }
+   }
+   .img-card-display{
+      img{
+         object-fit:cover;
+         aspect-ratio: 1;
+      }
+      &.cart {
+         img{
+            height: 120px;
+            width: 100%;
+         }
+        
+      }
+   }
+}
+
+.card-text{
+   color: rgba(0,0,0,0.6);
+}

@@ -1,0 +1,21 @@
+body{
+   color: rgb(31, 31, 31);
+   font-family: $font-global;
+   background: $bg-grey;
+
+   &.not-found{
+      background: $white;
+   }
+}
+
+.pop-mask{
+   background: rgba(0,0,0,0.2);
+   z-index: 1;
+   top: 0;
+   height: 100%;
+   width: 100%;
+}
+
+.message-pop-up{
+   background: $white;
+}

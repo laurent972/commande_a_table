@@ -1,0 +1,52 @@
+.button-primary{
+   background: $tertiary;
+   color: $white;
+   font-size: 1.25rem;
+   border: 0;
+   @include transition;
+   border-radius: 50px;
+   padding: 1rem 2rem;
+
+   &:hover{
+      background: darken($tertiary, 20%);
+      color: $white;
+   }
+}
+
+.btn-border{
+   border: 1px solid rgba(0,0,0,0.45);
+   @include transition;
+   border-radius: 50px;
+   padding: 0.8rem 1.2rem;
+   &:hover{
+      color: rgba(0,0,0,0.7);
+      border: 1px solid rgba(0,0,0,1);
+   }
+}
+
+
+.button-filter{
+   background: transparent;
+   border: 0;
+   @include transition;
+}
+
+.active-button{
+   background: $fourth;
+}
+
+.card-button{
+   background: $tertiary;
+   color: $white;
+   font-weight: bold;
+   font-size: 1.5rem;
+   width: 35px;
+   height: 35px;
+   padding: 0;
+   @include transition;
+
+   &:hover{
+      background: darken($tertiary, 20%);
+      color: $white;
+   }
+}
